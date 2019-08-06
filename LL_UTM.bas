@@ -35,7 +35,7 @@ a_2 = (3 / 8) * (ecc_2 + (ecc_4 / 4) + ((15 * ecc_6) / 128))
 a_4 = (15 / 256) * (ecc_4 + ((3 * ecc_6) / 4))
 a_6 = (35 * ecc_6) / 3072
 
-'meridian distance
+ 'meridian distance
 term_1 = sma * a_0 * lat_rad
 term_2 = -1 * sma * sin2 * a_2
 term_3 = sma * sin4 * a_4
