@@ -6,8 +6,10 @@ Sub query_db(ByVal query_str As String, ByVal worksheet_name As String)
     Dim strConnString As String
     Dim ws As Worksheet
     Set ws = Worksheets(worksheet_name)
-    
-        strConnString = "Provider=SQLOLEDB;Data Source=DESKTOP-CLTNVDD\SQLEXPRESS;" _
+        Dim servername as string
+        servername = "blahblahblah"
+        
+        strConnString = "Provider=SQLOLEDB;Data Source=" & servername & ";" _
                         & "Initial Catalog=gtfs;Integrated Security=SSPI;"
         
         Set conn = New ADODB.Connection
